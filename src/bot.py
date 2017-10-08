@@ -28,6 +28,6 @@ while True:
     api.update_with_media(tmpfile,line)
     print(line)
     waitTime = randint(minMins,maxMins)
-    print("Waiting " + waitTime + " minutes")
+    print("Waiting " + str(waitTime) + " minutes")
     time.sleep(60*waitTime)
     os.remove(tmpfile)
