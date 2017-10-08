@@ -24,6 +24,37 @@ It does not include:
 * The complete set of fonts used
 * System to generate the random names (that is another project).
 
+## How to run
+
+Clone the repository
+
+```sh
+git clone https://github.com/enriqueav/random_vgname_bot.git
+cd random_vgname_bot
+```
+
+Modify src/bot.py to add your own Twitter credentials (obtain them at [https://apps.twitter.com/app/new](https://apps.twitter.com/app/new)):
+
+```python
+CONSUMER_KEY = ''     # your key here
+CONSUMER_SECRET = ''  # your secret here
+ACCESS_KEY = ''       # your key here
+ACCESS_SECRET = ''    # your secret here
+```
+
+You might need to install Pillow and Tweepy first
+
+```sh
+pip install tweepy
+pip install Pillow
+```
+
+Finally, to run it
+
+```sh
+python src/bot.py text/names.txt
+```
+
 ## How to deploy to Heroku
 
 **TO DO**
